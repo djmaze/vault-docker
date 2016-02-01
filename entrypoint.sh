@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-ip=$(ip address show dev eth0 | grep "inet " | awk '{ print $2 }' | awk -F'/' '{print $1}')
+ip=$(hostname -i)
 
 sed -i "s/{{IP}}/$ip/" /etc/vault.conf
 
