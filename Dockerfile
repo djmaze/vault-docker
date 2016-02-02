@@ -14,4 +14,4 @@ COPY entrypoint.sh /entrypoint.sh
 COPY vault.conf /etc/vault.conf
 
 ENTRYPOINT ["/entrypoint.sh"]
-EXPOSE 9200/tcp
+EXPOSE 8200/tcp
