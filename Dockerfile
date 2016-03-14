@@ -1,6 +1,6 @@
 FROM alpine
 
-ENV VAULT_VERSION 0.5.0-rc1
+ENV VAULT_VERSION 0.5.1
 
 RUN apk add --update curl \
  && curl -sSL -o "/tmp/vault.zip" "https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_linux_amd64.zip" \
